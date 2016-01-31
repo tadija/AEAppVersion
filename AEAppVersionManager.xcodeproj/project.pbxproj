@@ -391,6 +391,7 @@
 				8BF64FB21C5E89BA00A6E0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BF64FB31C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +400,7 @@
 				8BF64FB51C5E89BA00A6E0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
