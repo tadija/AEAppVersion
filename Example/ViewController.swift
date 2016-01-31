@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import AEAppVersionManager
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var versionLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        configureUI()
     }
+    
+    func configureUI() {
+        versionLabel.text = AEAppVersionManager.versionAndBuild
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        var stateDescription: String
+
+        switch AEAppVersionManager.sharedInstance.state {
+        case .New:
+            stateDescription = "Clean Install"
+        case .Equal:
+            stateDescription = "Not Changed"
+        case .Update(let previousVersion):
+            stateDescription = "Update from: \(previousVersion)"
+        case .Rollback(let previousVersion):
+            stateDescription = "Rollback from: \(previousVersion)"
+        }
+        
+        stateLabel.text = stateDescription
     }
-
 
 }
 

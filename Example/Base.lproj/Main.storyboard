@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version and build:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-Xy-d0x">
+                                <rect key="frame" x="20" y="28" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X.X.X (Y)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgr-7a-37R">
+                                <rect key="frame" x="175" y="28" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version State:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89i-A4-Bj1">
+                                <rect key="frame" x="20" y="57" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version State Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="std-1G-5FX">
+                                <rect key="frame" x="143" y="57" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="std-1G-5FX" firstAttribute="leading" secondItem="89i-A4-Bj1" secondAttribute="trailing" constant="8" symbolic="YES" id="1xL-bb-hYu"/>
+                            <constraint firstItem="89i-A4-Bj1" firstAttribute="leading" secondItem="Euj-Xy-d0x" secondAttribute="leading" id="2mV-Yg-tHf"/>
+                            <constraint firstItem="Euj-Xy-d0x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="OmW-OU-awO"/>
+                            <constraint firstItem="std-1G-5FX" firstAttribute="baseline" secondItem="89i-A4-Bj1" secondAttribute="baseline" id="bJS-97-Woe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Euj-Xy-d0x" secondAttribute="leading" id="f1A-BH-Wyz"/>
+                            <constraint firstItem="vgr-7a-37R" firstAttribute="leading" secondItem="Euj-Xy-d0x" secondAttribute="trailing" constant="8" symbolic="YES" id="id1-S1-h4T"/>
+                            <constraint firstItem="89i-A4-Bj1" firstAttribute="top" secondItem="Euj-Xy-d0x" secondAttribute="bottom" constant="8" symbolic="YES" id="iz5-i9-WtE"/>
+                            <constraint firstItem="vgr-7a-37R" firstAttribute="baseline" secondItem="Euj-Xy-d0x" secondAttribute="baseline" id="ytV-4D-ycM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stateLabel" destination="std-1G-5FX" id="j7K-9z-uh1"/>
+                        <outlet property="versionLabel" destination="vgr-7a-37R" id="h11-xL-YTx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
