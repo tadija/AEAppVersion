@@ -31,6 +31,8 @@
 		8BF64FAB1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEVersionComparatorTests.swift; sourceTree = "<group>"; };
 		8BF64FAD1C5E89BA00A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAppVersionManager.swift; sourceTree = "<group>"; };
+		8BF650101C5E9AD300A6E0D1 /* AEAppVersionManager.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AEAppVersionManager.podspec; sourceTree = "<group>"; };
+		8BF650111C5E9AD300A6E0D1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 				8BF64F9E1C5E89BA00A6E0D1 /* Source */,
 				8BF64FAA1C5E89BA00A6E0D1 /* Tests */,
 				8BF64F9D1C5E89BA00A6E0D1 /* Products */,
+				8BF650101C5E9AD300A6E0D1 /* AEAppVersionManager.podspec */,
+				8BF650111C5E9AD300A6E0D1 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
