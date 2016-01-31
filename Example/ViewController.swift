@@ -22,22 +22,20 @@ class ViewController: UIViewController {
     
     func configureUI() {
         versionLabel.text = AEAppVersionManager.versionAndBuild
-
-        var stateDescription: String
-
+        stateLabel.text = versionStatedDescription
+    }
+    
+    var versionStatedDescription: String {
         switch AEAppVersionManager.sharedInstance.state {
         case .New:
-            stateDescription = "Clean Install"
+            return "Clean Install"
         case .Equal:
-            stateDescription = "Not Changed"
+            return "Not Changed"
         case .Update(let previousVersion):
-            stateDescription = "Update from: \(previousVersion)"
+            return "Update from: \(previousVersion)"
         case .Rollback(let previousVersion):
-            stateDescription = "Rollback from: \(previousVersion)"
+            return "Rollback from: \(previousVersion)"
         }
-        
-        stateLabel.text = stateDescription
     }
 
 }
-
