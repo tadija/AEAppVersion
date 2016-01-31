@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 s.name = 'AEAppVersionManager'
 s.version = '0.1.0'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
-s.summary = 'Simple and Lightweight App Version Monitoring'
+s.summary = 'Simple and Lightweight App Version Tracking'
 
 s.homepage = 'https://github.com/tadija/AEAppVersionManager'
 s.author = { 'tadija' => 'tadija@me.com' }

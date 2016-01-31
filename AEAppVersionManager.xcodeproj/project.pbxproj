@@ -33,6 +33,7 @@
 		8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAppVersionManager.swift; sourceTree = "<group>"; };
 		8BF650101C5E9AD300A6E0D1 /* AEAppVersionManager.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AEAppVersionManager.podspec; sourceTree = "<group>"; };
 		8BF650111C5E9AD300A6E0D1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8BF650121C5E9DEB00A6E0D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +61,7 @@
 				8BF64F9E1C5E89BA00A6E0D1 /* Source */,
 				8BF64FAA1C5E89BA00A6E0D1 /* Tests */,
 				8BF64F9D1C5E89BA00A6E0D1 /* Products */,
-				8BF650101C5E9AD300A6E0D1 /* AEAppVersionManager.podspec */,
-				8BF650111C5E9AD300A6E0D1 /* LICENSE */,
+				8BF650131C5E9F1100A6E0D1 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +97,16 @@
 			children = (
 				8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersionManager.h */,
 				8BF64FA11C5E89BA00A6E0D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BF650131C5E9F1100A6E0D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BF650101C5E9AD300A6E0D1 /* AEAppVersionManager.podspec */,
+				8BF650111C5E9AD300A6E0D1 /* LICENSE */,
+				8BF650121C5E9DEB00A6E0D1 /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
