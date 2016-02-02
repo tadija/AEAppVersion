@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:AEAppVersionManager.xcodeproj">
+      location = "container:AEAppVersion.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:iOS Example.xcodeproj">

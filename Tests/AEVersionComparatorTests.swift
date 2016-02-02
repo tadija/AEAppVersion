@@ -23,7 +23,7 @@
 //
 
 import XCTest
-@testable import AEAppVersionManager
+@testable import AEAppVersion
 
 class AEVersionComparatorTests: XCTestCase {
     

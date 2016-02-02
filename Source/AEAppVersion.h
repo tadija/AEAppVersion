@@ -1,5 +1,5 @@
 //
-// AEAppVersionManager.h
+// AEAppVersion.h
 //
 // Copyright (c) 2016 Marko Tadić <tadija@me.com> http://tadija.net
 //
@@ -24,5 +24,5 @@
 
 #import <Foundation/Foundation.h>
 
-FOUNDATION_EXPORT double AEAppVersionManagerVersionNumber;
-FOUNDATION_EXPORT const unsigned char AEAppVersionManagerVersionString[];
+FOUNDATION_EXPORT double AEAppVersionVersionNumber;
+FOUNDATION_EXPORT const unsigned char AEAppVersionVersionString[];

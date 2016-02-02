@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BF64FA01C5E89BA00A6E0D1 /* AEAppVersionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BF64FA71C5E89BA00A6E0D1 /* AEAppVersionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersionManager.framework */; };
+		8BF64FA01C5E89BA00A6E0D1 /* AEAppVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BF64FA71C5E89BA00A6E0D1 /* AEAppVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersion.framework */; };
 		8BF64FAC1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FAB1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift */; };
-		8BF64FB71C5E8AAE00A6E0D1 /* AEAppVersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersionManager.swift */; };
+		8BF64FB71C5E8AAE00A6E0D1 /* AEAppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,19 +19,19 @@
 			containerPortal = 8BF64F931C5E89BA00A6E0D1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8BF64F9B1C5E89BA00A6E0D1;
-			remoteInfo = AEAppVersionManager;
+			remoteInfo = AEAppVersion;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersionManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEAppVersionManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAppVersionManager.h; sourceTree = "<group>"; };
+		8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEAppVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAppVersion.h; sourceTree = "<group>"; };
 		8BF64FA11C5E89BA00A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BF64FA61C5E89BA00A6E0D1 /* AEAppVersionManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AEAppVersionManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF64FA61C5E89BA00A6E0D1 /* AEAppVersionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AEAppVersionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF64FAB1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEVersionComparatorTests.swift; sourceTree = "<group>"; };
 		8BF64FAD1C5E89BA00A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAppVersionManager.swift; sourceTree = "<group>"; };
-		8BF650101C5E9AD300A6E0D1 /* AEAppVersionManager.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AEAppVersionManager.podspec; sourceTree = "<group>"; };
+		8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAppVersion.swift; sourceTree = "<group>"; };
+		8BF650101C5E9AD300A6E0D1 /* AEAppVersion.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AEAppVersion.podspec; sourceTree = "<group>"; };
 		8BF650111C5E9AD300A6E0D1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8BF650121C5E9DEB00A6E0D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF64FA71C5E89BA00A6E0D1 /* AEAppVersionManager.framework in Frameworks */,
+				8BF64FA71C5E89BA00A6E0D1 /* AEAppVersion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +68,8 @@
 		8BF64F9D1C5E89BA00A6E0D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersionManager.framework */,
-				8BF64FA61C5E89BA00A6E0D1 /* AEAppVersionManagerTests.xctest */,
+				8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersion.framework */,
+				8BF64FA61C5E89BA00A6E0D1 /* AEAppVersionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +77,7 @@
 		8BF64F9E1C5E89BA00A6E0D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersionManager.swift */,
+				8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersion.swift */,
 				8BF64FB81C5E8B0D00A6E0D1 /* Supporting Files */,
 			);
 			path = Source;
@@ -95,7 +95,7 @@
 		8BF64FB81C5E8B0D00A6E0D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersionManager.h */,
+				8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersion.h */,
 				8BF64FA11C5E89BA00A6E0D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -104,7 +104,7 @@
 		8BF650131C5E9F1100A6E0D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BF650101C5E9AD300A6E0D1 /* AEAppVersionManager.podspec */,
+				8BF650101C5E9AD300A6E0D1 /* AEAppVersion.podspec */,
 				8BF650111C5E9AD300A6E0D1 /* LICENSE */,
 				8BF650121C5E9DEB00A6E0D1 /* README.md */,
 			);
@@ -118,16 +118,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF64FA01C5E89BA00A6E0D1 /* AEAppVersionManager.h in Headers */,
+				8BF64FA01C5E89BA00A6E0D1 /* AEAppVersion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8BF64F9B1C5E89BA00A6E0D1 /* AEAppVersionManager */ = {
+		8BF64F9B1C5E89BA00A6E0D1 /* AEAppVersion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BF64FB01C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionManager" */;
+			buildConfigurationList = 8BF64FB01C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersion" */;
 			buildPhases = (
 				8BF64F971C5E89BA00A6E0D1 /* Sources */,
 				8BF64F981C5E89BA00A6E0D1 /* Frameworks */,
@@ -138,14 +138,14 @@
 			);
 			dependencies = (
 			);
-			name = AEAppVersionManager;
-			productName = AEAppVersionManager;
-			productReference = 8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersionManager.framework */;
+			name = AEAppVersion;
+			productName = AEAppVersion;
+			productReference = 8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8BF64FA51C5E89BA00A6E0D1 /* AEAppVersionManagerTests */ = {
+		8BF64FA51C5E89BA00A6E0D1 /* AEAppVersionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BF64FB31C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionManagerTests" */;
+			buildConfigurationList = 8BF64FB31C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionTests" */;
 			buildPhases = (
 				8BF64FA21C5E89BA00A6E0D1 /* Sources */,
 				8BF64FA31C5E89BA00A6E0D1 /* Frameworks */,
@@ -156,9 +156,9 @@
 			dependencies = (
 				8BF64FA91C5E89BA00A6E0D1 /* PBXTargetDependency */,
 			);
-			name = AEAppVersionManagerTests;
-			productName = AEAppVersionManagerTests;
-			productReference = 8BF64FA61C5E89BA00A6E0D1 /* AEAppVersionManagerTests.xctest */;
+			name = AEAppVersionTests;
+			productName = AEAppVersionTests;
+			productReference = 8BF64FA61C5E89BA00A6E0D1 /* AEAppVersionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BF64F961C5E89BA00A6E0D1 /* Build configuration list for PBXProject "AEAppVersionManager" */;
+			buildConfigurationList = 8BF64F961C5E89BA00A6E0D1 /* Build configuration list for PBXProject "AEAppVersion" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -191,8 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BF64F9B1C5E89BA00A6E0D1 /* AEAppVersionManager */,
-				8BF64FA51C5E89BA00A6E0D1 /* AEAppVersionManagerTests */,
+				8BF64F9B1C5E89BA00A6E0D1 /* AEAppVersion */,
+				8BF64FA51C5E89BA00A6E0D1 /* AEAppVersionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF64FB71C5E8AAE00A6E0D1 /* AEAppVersionManager.swift in Sources */,
+				8BF64FB71C5E8AAE00A6E0D1 /* AEAppVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +236,7 @@
 /* Begin PBXTargetDependency section */
 		8BF64FA91C5E89BA00A6E0D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BF64F9B1C5E89BA00A6E0D1 /* AEAppVersionManager */;
+			target = 8BF64F9B1C5E89BA00A6E0D1 /* AEAppVersion */;
 			targetProxy = 8BF64FA81C5E89BA00A6E0D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -342,7 +342,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionManager;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -360,7 +360,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionManager;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -371,7 +371,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionManagerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -381,7 +381,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionManagerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BF64F961C5E89BA00A6E0D1 /* Build configuration list for PBXProject "AEAppVersionManager" */ = {
+		8BF64F961C5E89BA00A6E0D1 /* Build configuration list for PBXProject "AEAppVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BF64FAE1C5E89BA00A6E0D1 /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BF64FB01C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionManager" */ = {
+		8BF64FB01C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BF64FB11C5E89BA00A6E0D1 /* Debug */,
@@ -407,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BF64FB31C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionManagerTests" */ = {
+		8BF64FB31C5E89BA00A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BF64FB41C5E89BA00A6E0D1 /* Debug */,

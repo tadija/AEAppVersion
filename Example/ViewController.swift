@@ -23,7 +23,7 @@
 //
 
 import UIKit
-import AEAppVersionManager
+import AEAppVersion
 
 class ViewController: UIViewController {
     
@@ -37,12 +37,12 @@ class ViewController: UIViewController {
     }
     
     func configureUI() {
-        versionLabel.text = AEAppVersionManager.versionAndBuild
+        versionLabel.text = AEAppVersion.versionAndBuild
         stateLabel.text = versionStatedDescription
     }
     
     var versionStatedDescription: String {
-        switch AEAppVersionManager.sharedInstance.state {
+        switch AEAppVersion.sharedInstance.state {
         case .New:
             return "Clean Install"
         case .Equal:
