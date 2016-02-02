@@ -23,7 +23,7 @@
 //
 
 import UIKit
-import AEAppVersionManager
+import AEAppVersion
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        AEAppVersionManager.sharedInstance.initialize()
+        AEAppVersion.sharedInstance.initialize()
         
         return true
     }

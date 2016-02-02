@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF64F9B1C5E89BA00A6E0D1"
-               BuildableName = "AEAppVersionManager.framework"
-               BlueprintName = "AEAppVersionManager"
-               ReferencedContainer = "container:AEAppVersionManager.xcodeproj">
+               BuildableName = "AEAppVersion.framework"
+               BlueprintName = "AEAppVersion"
+               ReferencedContainer = "container:AEAppVersion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF64FA51C5E89BA00A6E0D1"
-               BuildableName = "AEAppVersionManagerTests.xctest"
-               BlueprintName = "AEAppVersionManagerTests"
-               ReferencedContainer = "container:AEAppVersionManager.xcodeproj">
+               BuildableName = "AEAppVersionTests.xctest"
+               BlueprintName = "AEAppVersionTests"
+               ReferencedContainer = "container:AEAppVersion.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF64F9B1C5E89BA00A6E0D1"
-            BuildableName = "AEAppVersionManager.framework"
-            BlueprintName = "AEAppVersionManager"
-            ReferencedContainer = "container:AEAppVersionManager.xcodeproj">
+            BuildableName = "AEAppVersion.framework"
+            BlueprintName = "AEAppVersion"
+            ReferencedContainer = "container:AEAppVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF64F9B1C5E89BA00A6E0D1"
-            BuildableName = "AEAppVersionManager.framework"
-            BlueprintName = "AEAppVersionManager"
-            ReferencedContainer = "container:AEAppVersionManager.xcodeproj">
+            BuildableName = "AEAppVersion.framework"
+            BlueprintName = "AEAppVersion"
+            ReferencedContainer = "container:AEAppVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF64F9B1C5E89BA00A6E0D1"
-            BuildableName = "AEAppVersionManager.framework"
-            BlueprintName = "AEAppVersionManager"
-            ReferencedContainer = "container:AEAppVersionManager.xcodeproj">
+            BuildableName = "AEAppVersion.framework"
+            BlueprintName = "AEAppVersion"
+            ReferencedContainer = "container:AEAppVersion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

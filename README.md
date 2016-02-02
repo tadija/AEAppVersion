@@ -1,15 +1,15 @@
-# AEAppVersionManager
+# AEAppVersion
 **Simple and Lightweight App Version Tracking**
 
 > Dead simple app version tracking. Add one line to your code and you're all set. 
 
-**AEAppVersionManager** is a [minion](http://tadija.net/public/minion.png) which consists of two classes:  
+**AEAppVersion** is a [minion](http://tadija.net/public/minion.png) which consists of two classes:  
 
 - **AEVersionComparator**  
 Base class for comparing given version strings via built in `compare` with `NSStringCompareOptions.NumericSearch`.  
 It holds version state **(clean install, not changed, update, rollback)** inside `state` enum property.  
 
-- **AEAppVersionManager**  
+- **AEAppVersion**  
 Subclass of `AEVersionComparator` with static properties for `version` and `build` strings from main bundle info dictionary.  
 When initialized it checks if previous version exists in user defaults and set version `state` accordingly, after which it saves current version to user defaults dictionary.
 
@@ -24,7 +24,7 @@ You should just initialize it from your AppDelegate's `didFinishLaunchingWithOpt
 
 ```swift
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-   AEAppVersionManager.sharedInstance.initialize()
+   AEAppVersion.sharedInstance.initialize()
    return true
 }
 ```
@@ -32,7 +32,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 Anytime later you can check version state like this:
 
 ```swift
-switch AEAppVersionManager.sharedInstance.state {
+switch AEAppVersion.sharedInstance.state {
 case .New:
   return "Clean Install"
 case .Equal:
@@ -55,12 +55,12 @@ You can also check out the example project and unit tests for more information.
 - [CocoaPods](http://cocoapods.org/):
 
   ```ruby
-  pod 'AEAppVersionManager'
+  pod 'AEAppVersion'
   ```
 
 - Manually:
 
-  Just drag *AEAppVersionManager.swift* into your project and that's it.
+  Just drag *AEAppVersion.swift* into your project and that's it.
 
 ## License
-AEAppVersionManager is released under the MIT license. See [LICENSE](LICENSE) for details.
+AEAppVersion is released under the MIT license. See [LICENSE](LICENSE) for details.

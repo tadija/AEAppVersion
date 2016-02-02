@@ -12,31 +12,31 @@
 		8BF64FEA1C5E8FC300A6E0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF64FE81C5E8FC300A6E0D1 /* Main.storyboard */; };
 		8BF64FEC1C5E8FC300A6E0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF64FEB1C5E8FC300A6E0D1 /* Assets.xcassets */; };
 		8BF64FEF1C5E8FC300A6E0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF64FED1C5E8FC300A6E0D1 /* LaunchScreen.storyboard */; };
-		8BF650061C5E917400A6E0D1 /* AEAppVersionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF650031C5E914600A6E0D1 /* AEAppVersionManager.framework */; };
-		8BF650071C5E917400A6E0D1 /* AEAppVersionManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF650031C5E914600A6E0D1 /* AEAppVersionManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BF650061C5E917400A6E0D1 /* AEAppVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */; };
+		8BF650071C5E917400A6E0D1 /* AEAppVersion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8BF650021C5E914600A6E0D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersionManager.xcodeproj */;
+			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8BF64F9C1C5E89BA00A6E0D1;
-			remoteInfo = AEAppVersionManager;
+			remoteInfo = AEAppVersion;
 		};
 		8BF650041C5E914600A6E0D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersionManager.xcodeproj */;
+			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8BF64FA61C5E89BA00A6E0D1;
-			remoteInfo = AEAppVersionManagerTests;
+			remoteInfo = AEAppVersionTests;
 		};
 		8BF650081C5E917400A6E0D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersionManager.xcodeproj */;
+			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8BF64F9B1C5E89BA00A6E0D1;
-			remoteInfo = AEAppVersionManager;
+			remoteInfo = AEAppVersion;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8BF650071C5E917400A6E0D1 /* AEAppVersionManager.framework in Embed Frameworks */,
+				8BF650071C5E917400A6E0D1 /* AEAppVersion.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +62,7 @@
 		8BF64FEB1C5E8FC300A6E0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF64FEE1C5E8FC300A6E0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF64FF01C5E8FC300A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BF64FFD1C5E914600A6E0D1 /* AEAppVersionManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AEAppVersionManager.xcodeproj; sourceTree = "<group>"; };
+		8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AEAppVersion.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF650061C5E917400A6E0D1 /* AEAppVersionManager.framework in Frameworks */,
+				8BF650061C5E917400A6E0D1 /* AEAppVersion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			children = (
 				8BF64FE31C5E8FC300A6E0D1 /* Source */,
 				8BF64FE21C5E8FC300A6E0D1 /* Products */,
-				8BF64FFD1C5E914600A6E0D1 /* AEAppVersionManager.xcodeproj */,
+				8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,8 +119,8 @@
 		8BF64FFE1C5E914600A6E0D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BF650031C5E914600A6E0D1 /* AEAppVersionManager.framework */,
-				8BF650051C5E914600A6E0D1 /* AEAppVersionManagerTests.xctest */,
+				8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */,
+				8BF650051C5E914600A6E0D1 /* AEAppVersionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			projectReferences = (
 				{
 					ProductGroup = 8BF64FFE1C5E914600A6E0D1 /* Products */;
-					ProjectRef = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersionManager.xcodeproj */;
+					ProjectRef = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -187,17 +187,17 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8BF650031C5E914600A6E0D1 /* AEAppVersionManager.framework */ = {
+		8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = AEAppVersionManager.framework;
+			path = AEAppVersion.framework;
 			remoteRef = 8BF650021C5E914600A6E0D1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8BF650051C5E914600A6E0D1 /* AEAppVersionManagerTests.xctest */ = {
+		8BF650051C5E914600A6E0D1 /* AEAppVersionTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = AEAppVersionManagerTests.xctest;
+			path = AEAppVersionTests.xctest;
 			remoteRef = 8BF650041C5E914600A6E0D1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -231,7 +231,7 @@
 /* Begin PBXTargetDependency section */
 		8BF650091C5E917400A6E0D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AEAppVersionManager;
+			name = AEAppVersion;
 			targetProxy = 8BF650081C5E917400A6E0D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -350,7 +350,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.tadija.AEAppVersionManager.iOS-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.tadija.AEAppVersion.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -362,7 +362,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.tadija.AEAppVersionManager.iOS-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.tadija.AEAppVersion.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

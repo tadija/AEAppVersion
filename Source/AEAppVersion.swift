@@ -1,5 +1,5 @@
 //
-// AEAppVersionManager.swift
+// AEAppVersion.swift
 //
 // Copyright (c) 2016 Marko Tadić <tadija@me.com> http://tadija.net
 //
@@ -24,12 +24,12 @@
 
 import Foundation
 
-public class AEAppVersionManager: AEVersionComparator {
+public class AEAppVersion: AEVersionComparator {
 
     // MARK: Static Properties
     
     /// Shared instance
-    public static let sharedInstance = AEAppVersionManager()
+    public static let sharedInstance = AEAppVersion()
     
     /// Version from Main Bundle Info dictionary
     public static let version = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
@@ -44,7 +44,7 @@ public class AEAppVersionManager: AEVersionComparator {
     public static let versionAndBuild = "\(version) (\(build))"
     
     /// Key for saving information about previous version to user defaults
-    public static let savedVersionKey = "AEAppVersionManager.PreviousVersionAndBuild"
+    public static let savedVersionKey = "AEAppVersion.PreviousVersionAndBuild"
     
     // MARK: Init
     
@@ -66,12 +66,12 @@ public class AEAppVersionManager: AEVersionComparator {
     public convenience init() {
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        let old = defaults.stringForKey(AEAppVersionManager.savedVersionKey)
-        let current = AEAppVersionManager.versionAndBuild
+        let old = defaults.stringForKey(AEAppVersion.savedVersionKey)
+        let current = AEAppVersion.versionAndBuild
         
         self.init(old: old, new: current)
         
-        defaults.setObject(current, forKey: AEAppVersionManager.savedVersionKey)
+        defaults.setObject(current, forKey: AEAppVersion.savedVersionKey)
         defaults.synchronize()
     }
     
