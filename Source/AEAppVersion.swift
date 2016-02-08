@@ -54,11 +54,13 @@ public class AEAppVersion: AEVersionComparator {
     // MARK: Init
     
     /**
-        This should be called on each app launch.
+        Helper method for initializing `AEAppVersion` singleton object.
+    
+        This should be called in your AppDelegate's `didFinishLaunchingWithOptions:`.
 
-        Implementation of this method is empty, it's just calling its `init` method.
+        Implementation of this method does nothing but calling `init` method on `sharedInstance`.
     */
-    public func initialize() {}
+    public class func initialize() { AEAppVersion.sharedInstance }
     
     /**
         Convenience initializer.

@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        AEAppVersion.sharedInstance.initialize()
+        AEAppVersion.initialize()
         
         return true
     }
