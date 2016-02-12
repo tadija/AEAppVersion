@@ -24,7 +24,7 @@ You should just initialize it from your AppDelegate's `didFinishLaunchingWithOpt
 
 ```swift
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-   AEAppVersion.initialize()
+   AEAppVersion.launch()
    return true
 }
 ```

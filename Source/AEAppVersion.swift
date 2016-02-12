@@ -31,10 +31,19 @@ import Foundation
 */
 public class AEAppVersion: AEVersionComparator {
 
-    // MARK: Static Properties
+    // MARK: Singleton
     
     /// Shared instance
     public static let sharedInstance = AEAppVersion()
+    
+    /**
+        Helper method for initializing `sharedInstance` singleton object.
+     
+        This should be called in AppDelegate's `didFinishLaunchingWithOptions:`.
+     */
+    public class func launch() { AEAppVersion.sharedInstance }
+    
+    // MARK: - Static Properties
     
     /// Version from Main Bundle Info dictionary
     public static let version = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
@@ -52,15 +61,6 @@ public class AEAppVersion: AEVersionComparator {
     public static let savedVersionKey = "AEAppVersion.PreviousVersionAndBuild"
     
     // MARK: Init
-    
-    /**
-        Helper method for initializing `AEAppVersion` singleton object.
-    
-        This should be called in your AppDelegate's `didFinishLaunchingWithOptions:`.
-
-        Implementation of this method does nothing but calling `init` method on `sharedInstance`.
-    */
-    public class func initialize() { AEAppVersion.sharedInstance }
     
     /**
         Convenience initializer.
