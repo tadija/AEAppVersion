@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8BF64FE01C5E8FC300A6E0D1"
-               BuildableName = "iOS Example.app"
-               BlueprintName = "iOS Example"
-               ReferencedContainer = "container:iOS Example.xcodeproj">
+               BuildableName = "AEAppVersionDemo.app"
+               BlueprintName = "AEAppVersionDemo"
+               ReferencedContainer = "container:AEAppVersionDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF64FE01C5E8FC300A6E0D1"
-            BuildableName = "iOS Example.app"
-            BlueprintName = "iOS Example"
-            ReferencedContainer = "container:iOS Example.xcodeproj">
+            BuildableName = "AEAppVersionDemo.app"
+            BlueprintName = "AEAppVersionDemo"
+            ReferencedContainer = "container:AEAppVersionDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF64FE01C5E8FC300A6E0D1"
-            BuildableName = "iOS Example.app"
-            BlueprintName = "iOS Example"
-            ReferencedContainer = "container:iOS Example.xcodeproj">
+            BuildableName = "AEAppVersionDemo.app"
+            BlueprintName = "AEAppVersionDemo"
+            ReferencedContainer = "container:AEAppVersionDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8BF64FE01C5E8FC300A6E0D1"
-            BuildableName = "iOS Example.app"
-            BlueprintName = "iOS Example"
-            ReferencedContainer = "container:iOS Example.xcodeproj">
+            BuildableName = "AEAppVersionDemo.app"
+            BlueprintName = "AEAppVersionDemo"
+            ReferencedContainer = "container:AEAppVersionDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
