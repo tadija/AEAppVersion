@@ -1,6 +1,14 @@
 # AEAppVersion
 **Simple and Lightweight App Version Tracking**
 
+[![Language Swift 2.2](https://img.shields.io/badge/Language-Swift%202.2-orange.svg?style=flat)](https://swift.org)
+[![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](http://www.apple.com)
+[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/tadija/AEAppVersion/blob/master/LICENSE)
+
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/AEAppVersion.svg?style=flat)](https://cocoapods.org/pods/AEAppVersion)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+
 > Dead simple app version tracking. Add one line to your code and you're all set. 
 
 **AEAppVersion** is a [minion](http://tadija.net/public/minion.png) which consists of two classes:  
@@ -17,7 +25,7 @@ When initialized it checks if previous version exists in user defaults and set v
 - Check **app version state** via enum property
 - Get **app version information** via static properties
 - Covered with **unit tests**
-- Covered with **inline docs**
+- Covered with [docs](http://cocoadocs.org/docsets/AEAppVersion)
 
 ## Usage
 You should just initialize it from your AppDelegate's `didFinishLaunchingWithOptions` and that's it.
@@ -54,9 +62,15 @@ You can also check out the example project and unit tests for more information.
 
 - [CocoaPods](http://cocoapods.org/):
 
-  ```ruby
-  pod 'AEAppVersion'
-  ```
+    ```ruby
+    pod 'AEAppVersion'
+    ```
+
+- [Carthage](https://github.com/Carthage/Carthage):
+
+    ```ogdl
+    github "tadija/AEAppVersion"
+    ```
 
 - Manually:
 

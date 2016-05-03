@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BB80C911CD8C9D500CFB4B9 /* AEAppVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB80C8B1CD8C9B400CFB4B9 /* AEAppVersion.framework */; };
+		8BB80C921CD8C9D500CFB4B9 /* AEAppVersion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB80C8B1CD8C9B400CFB4B9 /* AEAppVersion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8BF64FE51C5E8FC300A6E0D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FE41C5E8FC300A6E0D1 /* AppDelegate.swift */; };
 		8BF64FE71C5E8FC300A6E0D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FE61C5E8FC300A6E0D1 /* ViewController.swift */; };
 		8BF64FEA1C5E8FC300A6E0D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF64FE81C5E8FC300A6E0D1 /* Main.storyboard */; };
 		8BF64FEC1C5E8FC300A6E0D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF64FEB1C5E8FC300A6E0D1 /* Assets.xcassets */; };
 		8BF64FEF1C5E8FC300A6E0D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF64FED1C5E8FC300A6E0D1 /* LaunchScreen.storyboard */; };
-		8BF650061C5E917400A6E0D1 /* AEAppVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */; };
-		8BF650071C5E917400A6E0D1 /* AEAppVersion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8BF650021C5E914600A6E0D1 /* PBXContainerItemProxy */ = {
+		8BB80C8A1CD8C9B400CFB4B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8BF64F9C1C5E89BA00A6E0D1;
 			remoteInfo = AEAppVersion;
 		};
-		8BF650041C5E914600A6E0D1 /* PBXContainerItemProxy */ = {
+		8BB80C8C1CD8C9B400CFB4B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8BF64FA61C5E89BA00A6E0D1;
 			remoteInfo = AEAppVersionTests;
 		};
-		8BF650081C5E917400A6E0D1 /* PBXContainerItemProxy */ = {
+		8BB80C931CD8C9D500CFB4B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 			proxyType = 1;
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8BF650071C5E917400A6E0D1 /* AEAppVersion.framework in Embed Frameworks */,
+				8BB80C921CD8C9D500CFB4B9 /* AEAppVersion.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,14 +55,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8BF64FE11C5E8FC300A6E0D1 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF64FE11C5E8FC300A6E0D1 /* AEAppVersionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AEAppVersionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF64FE41C5E8FC300A6E0D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF64FE61C5E8FC300A6E0D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8BF64FE91C5E8FC300A6E0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF64FEB1C5E8FC300A6E0D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF64FEE1C5E8FC300A6E0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF64FF01C5E8FC300A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AEAppVersion.xcodeproj; sourceTree = "<group>"; };
+		8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEAppVersion.xcodeproj; path = ../AEAppVersion.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,17 +70,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF650061C5E917400A6E0D1 /* AEAppVersion.framework in Frameworks */,
+				8BB80C911CD8C9D500CFB4B9 /* AEAppVersion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BB80C861CD8C9B400CFB4B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB80C8B1CD8C9B400CFB4B9 /* AEAppVersion.framework */,
+				8BB80C8D1CD8C9B400CFB4B9 /* AEAppVersionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8BF64FD81C5E8FC300A6E0D1 = {
 			isa = PBXGroup;
 			children = (
-				8BF64FE31C5E8FC300A6E0D1 /* Source */,
+				8BF64FE31C5E8FC300A6E0D1 /* AEAppVersionDemo */,
 				8BF64FE21C5E8FC300A6E0D1 /* Products */,
 				8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */,
 			);
@@ -89,20 +98,19 @@
 		8BF64FE21C5E8FC300A6E0D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BF64FE11C5E8FC300A6E0D1 /* iOS Example.app */,
+				8BF64FE11C5E8FC300A6E0D1 /* AEAppVersionDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BF64FE31C5E8FC300A6E0D1 /* Source */ = {
+		8BF64FE31C5E8FC300A6E0D1 /* AEAppVersionDemo */ = {
 			isa = PBXGroup;
 			children = (
 				8BF64FE41C5E8FC300A6E0D1 /* AppDelegate.swift */,
 				8BF64FE61C5E8FC300A6E0D1 /* ViewController.swift */,
 				8BF64FFC1C5E907200A6E0D1 /* Supporting Files */,
 			);
-			name = Source;
-			path = Example;
+			path = AEAppVersionDemo;
 			sourceTree = "<group>";
 		};
 		8BF64FFC1C5E907200A6E0D1 /* Supporting Files */ = {
@@ -116,21 +124,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8BF64FFE1C5E914600A6E0D1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */,
-				8BF650051C5E914600A6E0D1 /* AEAppVersionTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BF64FE01C5E8FC300A6E0D1 /* iOS Example */ = {
+		8BF64FE01C5E8FC300A6E0D1 /* AEAppVersionDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BF64FF31C5E8FC300A6E0D1 /* Build configuration list for PBXNativeTarget "iOS Example" */;
+			buildConfigurationList = 8BF64FF31C5E8FC300A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionDemo" */;
 			buildPhases = (
 				8BF64FDD1C5E8FC300A6E0D1 /* Sources */,
 				8BF64FDE1C5E8FC300A6E0D1 /* Frameworks */,
@@ -140,11 +139,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				8BF650091C5E917400A6E0D1 /* PBXTargetDependency */,
+				8BB80C941CD8C9D500CFB4B9 /* PBXTargetDependency */,
 			);
-			name = "iOS Example";
+			name = AEAppVersionDemo;
 			productName = "iOS Example";
-			productReference = 8BF64FE11C5E8FC300A6E0D1 /* iOS Example.app */;
+			productReference = 8BF64FE11C5E8FC300A6E0D1 /* AEAppVersionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BF64FDC1C5E8FC300A6E0D1 /* Build configuration list for PBXProject "iOS Example" */;
+			buildConfigurationList = 8BF64FDC1C5E8FC300A6E0D1 /* Build configuration list for PBXProject "AEAppVersionDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,30 +174,30 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8BF64FFE1C5E914600A6E0D1 /* Products */;
+					ProductGroup = 8BB80C861CD8C9B400CFB4B9 /* Products */;
 					ProjectRef = 8BF64FFD1C5E914600A6E0D1 /* AEAppVersion.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				8BF64FE01C5E8FC300A6E0D1 /* iOS Example */,
+				8BF64FE01C5E8FC300A6E0D1 /* AEAppVersionDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8BF650031C5E914600A6E0D1 /* AEAppVersion.framework */ = {
+		8BB80C8B1CD8C9B400CFB4B9 /* AEAppVersion.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AEAppVersion.framework;
-			remoteRef = 8BF650021C5E914600A6E0D1 /* PBXContainerItemProxy */;
+			remoteRef = 8BB80C8A1CD8C9B400CFB4B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8BF650051C5E914600A6E0D1 /* AEAppVersionTests.xctest */ = {
+		8BB80C8D1CD8C9B400CFB4B9 /* AEAppVersionTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = AEAppVersionTests.xctest;
-			remoteRef = 8BF650041C5E914600A6E0D1 /* PBXContainerItemProxy */;
+			remoteRef = 8BB80C8C1CD8C9B400CFB4B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -229,10 +228,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8BF650091C5E917400A6E0D1 /* PBXTargetDependency */ = {
+		8BB80C941CD8C9D500CFB4B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AEAppVersion;
-			targetProxy = 8BF650081C5E917400A6E0D1 /* PBXContainerItemProxy */;
+			targetProxy = 8BB80C931CD8C9D500CFB4B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -348,10 +347,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = AEAppVersionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.tadija.AEAppVersion.iOS-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionDemo;
+				PRODUCT_NAME = AEAppVersionDemo;
 			};
 			name = Debug;
 		};
@@ -360,17 +359,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = AEAppVersionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.tadija.AEAppVersion.iOS-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionDemo;
+				PRODUCT_NAME = AEAppVersionDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BF64FDC1C5E8FC300A6E0D1 /* Build configuration list for PBXProject "iOS Example" */ = {
+		8BF64FDC1C5E8FC300A6E0D1 /* Build configuration list for PBXProject "AEAppVersionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BF64FF11C5E8FC300A6E0D1 /* Debug */,
@@ -379,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BF64FF31C5E8FC300A6E0D1 /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
+		8BF64FF31C5E8FC300A6E0D1 /* Build configuration list for PBXNativeTarget "AEAppVersionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BF64FF41C5E8FC300A6E0D1 /* Debug */,

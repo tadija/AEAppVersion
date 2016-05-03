@@ -40,7 +40,7 @@ public class AEAppVersion: AEVersionComparator {
         Helper method for initializing `sharedInstance` singleton object.
      
         This should be called in AppDelegate's `didFinishLaunchingWithOptions:`.
-     */
+    */
     public class func launch() { AEAppVersion.sharedInstance }
     
     // MARK: - Static Properties
