@@ -60,7 +60,7 @@
 		8BF64F921C5E89BA00A6E0D1 = {
 			isa = PBXGroup;
 			children = (
-				8BF64F9E1C5E89BA00A6E0D1 /* Source */,
+				8BF64F9E1C5E89BA00A6E0D1 /* Sources */,
 				8BF64FAA1C5E89BA00A6E0D1 /* Tests */,
 				8BF64F9D1C5E89BA00A6E0D1 /* Products */,
 				8BF650131C5E9F1100A6E0D1 /* Supporting Files */,
@@ -76,13 +76,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BF64F9E1C5E89BA00A6E0D1 /* Source */ = {
+		8BF64F9E1C5E89BA00A6E0D1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersion.swift */,
 				8BF64FB81C5E8B0D00A6E0D1 /* Supporting Files */,
 			);
-			name = Source;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -339,6 +338,7 @@
 		8BF64FB11C5E89BA00A6E0D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -357,6 +357,7 @@
 		8BF64FB21C5E89BA00A6E0D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
