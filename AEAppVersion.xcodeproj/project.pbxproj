@@ -24,6 +24,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BB80C951CD8CB2700CFB4B9 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		8BB80C961CD8CBB500CFB4B9 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEAppVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAppVersion.h; sourceTree = "<group>"; };
 		8BF64FA11C5E89BA00A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,9 +107,11 @@
 		8BF650131C5E9F1100A6E0D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8BF650101C5E9AD300A6E0D1 /* AEAppVersion.podspec */,
 				8BF650111C5E9AD300A6E0D1 /* LICENSE */,
 				8BF650121C5E9DEB00A6E0D1 /* README.md */,
+				8BB80C951CD8CB2700CFB4B9 /* CHANGELOG.md */,
+				8BF650101C5E9AD300A6E0D1 /* AEAppVersion.podspec */,
+				8BB80C961CD8CBB500CFB4B9 /* Package.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

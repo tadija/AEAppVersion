@@ -1,0 +1,22 @@
+# Changelog
+
+## Version 0.3.2
+
+- Better organization of files and directories
+- Added support for Swift Package Manager
+
+## Version 0.3.1
+
+- Renamed `initialize` to `launch`
+
+## Version 0.2.1
+
+- Modified `initialize` helper to be class method instead of instance method
+
+## Version 0.1.1
+
+- Ready for release
+
+## Version 0.1.0
+
+- Initial version
