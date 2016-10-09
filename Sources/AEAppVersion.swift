@@ -25,34 +25,21 @@
 import Foundation
 
 /**
-    Subclass of `AEVersionComparator` with static properties for `version` and `build` from main bundle info dictionary.
-    When initialized it checks if previous version exists in user defaults and set version state accordingly, 
-    after which it saves current version to user defaults dictionary.
+    Subclass of `AEVersionComparator` with properties for `version` and `build` from main bundle info dictionary.
+    Call `launch` in AppDelegate's `didFinishLaunchingWithOptions:` then check its `state` property when needed.
 */
 open class AEAppVersion: AEVersionComparator {
-
-    // MARK: Singleton
+    
+    // MARK: Properties
     
     /// Shared instance
-    open static let sharedInstance = AEAppVersion()
-    
-    /**
-        Helper method for initializing `sharedInstance` singleton object.
-     
-        This should be called in AppDelegate's `didFinishLaunchingWithOptions:`.
-    */
-    open class func launch() { AEAppVersion.sharedInstance }
-    
-    // MARK: - Static Properties
+    open static let shared = AEAppVersion()
     
     /// Version from Main Bundle Info dictionary
-    open static let version = bundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+    open static let version = Bundle.main.version ?? "0.0.0"
     
     /// Build from Main Bundle Info dictionary
-    open static let build = bundle.object(forInfoDictionaryKey: kCFBundleVersionKey as String) as! String
-    
-    /// Main bundle helper
-    fileprivate static let bundle = Bundle.main
+    open static let build = Bundle.main.build ?? "0"
     
     /// `version` and `build` concatenated like this: "1.0.0 (1)"
     open static let versionAndBuild = "\(version) (\(build))"
@@ -60,17 +47,21 @@ open class AEAppVersion: AEVersionComparator {
     /// Key for saving information about previous version to user defaults
     open static let savedVersionKey = "AEAppVersion.PreviousVersionAndBuild"
     
-    // MARK: Init
+    // MARK: API
     
     /**
-        Convenience initializer.
-
-        Checks if saved version already exists in user defaults and set state accordingly,
-        after which it saves current version as saved version under `savedVersionKey` in user defaults.
-
-        - returns: An initialized version comparator object.
+        Helper method for initializing `shared` singleton object.
+     
+        This should be called in AppDelegate's `didFinishLaunchingWithOptions:`.
+     
+        It will check if saved version already exists in user defaults and set its `state` property accordingly.
+        After that it will save current version as saved version under `savedVersionKey` in user defaults.
     */
-    public convenience init() {
+    open class func launch() { let _ = AEAppVersion.shared }
+    
+    // MARK: Init
+    
+    private convenience init() {
         let defaults = UserDefaults.standard
         
         let old = defaults.string(forKey: AEAppVersion.savedVersionKey)
@@ -84,11 +75,25 @@ open class AEAppVersion: AEVersionComparator {
     
 }
 
+// MARK: - Bundle helper extension
+
+extension Bundle {
+    
+    var version: String? {
+        return infoDictionary?["CFBundleShortVersionString"] as? String
+    }
+    
+    var build: String? {
+        return infoDictionary?["CFBundleVersion"] as? String
+    }
+    
+}
+
 // MARK: - AEVersionComparator
 
 /**
-    Base class for comparing given version strings via built in compare with `NSStringCompareOptions.NumericSearch`.
-    It holds `AEVersionState` inside `state` property.
+    Base class for comparing given version strings via `compare` with `NSString.CompareOptions.numeric` option.
+    It resolves version comparation state (`AEVersionState`) inside its `state` property.
 */
 open class AEVersionComparator {
     
@@ -155,10 +160,13 @@ open class AEVersionComparator {
 public enum AEVersionState {
     /// Clean install
     case new
+    
     /// Version not changed
     case equal
+    
     /// Update from given version
     case update(previousVersion: String)
+    
     /// Rollback from given version
     case rollback(previousVersion: String)
 }
