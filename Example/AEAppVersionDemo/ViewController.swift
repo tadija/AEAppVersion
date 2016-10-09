@@ -42,14 +42,14 @@ class ViewController: UIViewController {
     }
     
     var versionStatedDescription: String {
-        switch AEAppVersion.sharedInstance.state {
-        case .New:
+        switch AEAppVersion.shared.state {
+        case .new:
             return "Clean Install"
-        case .Equal:
+        case .equal:
             return "Not Changed"
-        case .Update(let previousVersion):
+        case .update(let previousVersion):
             return "Update from: \(previousVersion)"
-        case .Rollback(let previousVersion):
+        case .rollback(let previousVersion):
             return "Rollback from: \(previousVersion)"
         }
     }
