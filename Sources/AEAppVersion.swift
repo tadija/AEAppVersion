@@ -25,10 +25,10 @@
 import Foundation
 
 /**
-    Subclass of `AEVersionComparator` with properties for `version` and `build` from main bundle info dictionary.
+    Subclass of `Comparator` with properties for `version` and `build` from main bundle info dictionary.
     Call `launch` in AppDelegate's `didFinishLaunchingWithOptions:` then check its `state` property when needed.
 */
-open class AEAppVersion: AEVersionComparator {
+open class AEAppVersion: Comparator {
     
     // MARK: Properties
     
@@ -87,108 +87,4 @@ extension Bundle {
         return infoDictionary?["CFBundleVersion"] as? String
     }
     
-}
-
-// MARK: - AEVersionComparator
-
-/**
-    Base class for comparing given version strings via `compare` with `NSString.CompareOptions.numeric` option.
-    It resolves version comparation state (`AEVersionState`) inside its `state` property.
-*/
-open class AEVersionComparator {
-    
-    // MARK: Properties
-    
-    /// Version comparation state
-    open let state: AEVersionState
-    
-    // MARK: Init
-    
-    /**
-        Designated initializer.
-    
-        Initializes and returns a newly allocated version comparator object with `state` property configured
-        by calling helper method `stateForComparingVersions` with given version strings.
-        
-        - parameter old: Old (previous) version string for comparation
-        - parameter new: New (current) version string for comparation
-    
-        - returns: An initialized version comparator object.
-    */
-    public init(old: String?, new: String) {
-        if let oldVersion = old {
-            state = AEVersionComparator.stateForComparingVersions(old: oldVersion, new: new)
-        } else {
-            state = .new
-        }
-    }
-    
-    // MARK: Helpers
-    
-    /**
-        Compares given version strings with `NSStringCompareOptions.NumericSearch`.
-    
-        - parameter old: Old (previous) version string for comparation
-        - parameter new: New (current) version string for comparation
-    
-        - returns: Proper `State` after comparing given versions.
-    */
-    open class func stateForComparingVersions(old: String, new: String) -> AEVersionState {
-        let comparison = old.compare(new, options: .numeric)
-        switch comparison {
-        case .orderedSame:
-            return .equal
-        case .orderedAscending:
-            return .update(previousVersion: old)
-        case .orderedDescending:
-            return .rollback(previousVersion: old)
-        }
-    }
-    
-}
-
-// MARK: - AEVersionState
-
-/**
-    App version state
-
-    - New: Clean install
-    - Equal: Version not changed
-    - Update: Update from given version
-    - Rollback: Rollback from given version
-*/
-public enum AEVersionState {
-    /// Clean install
-    case new
-    
-    /// Version not changed
-    case equal
-    
-    /// Update from given version
-    case update(previousVersion: String)
-    
-    /// Rollback from given version
-    case rollback(previousVersion: String)
-}
-
-/// Conformance to `Equatable` protocol
-extension AEVersionState: Equatable {}
-
-/**
-    Implementation of the `Equatable` protocol so that `AEVersionState` 
-    can be compared for value equality using operators == and !=.
-*/
-public func == (lhs: AEVersionState, rhs: AEVersionState) -> Bool {
-    switch (lhs, rhs) {
-    case (.new, .new):
-        return true
-    case (.equal, .equal):
-        return true
-    case (let .update(previous1), let .update(previous2)):
-        return previous1 == previous2
-    case (let .rollback(previous1), let .rollback(previous2)):
-        return previous1 == previous2
-    default:
-        return false
-    }
 }
