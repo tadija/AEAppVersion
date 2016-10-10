@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.4.0
+
+- Code updated for Swift 3.0 - Xcode 8.0 (8A218a)
+- Sources reorganized from single to multiple files
+- Refactoring
+
 ## Version 0.3.2
 
 - Better organization of files and directories
