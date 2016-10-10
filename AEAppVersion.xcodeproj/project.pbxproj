@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B62B40A1DAC158E006FAB83 /* Comparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62B4091DAC158E006FAB83 /* Comparator.swift */; };
+		8B62B40C1DAC1593006FAB83 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62B40B1DAC1593006FAB83 /* State.swift */; };
 		8BF64FA01C5E89BA00A6E0D1 /* AEAppVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BF64FA71C5E89BA00A6E0D1 /* AEAppVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersion.framework */; };
-		8BF64FAC1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FAB1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift */; };
+		8BF64FAC1C5E89BA00A6E0D1 /* ComparatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FAB1C5E89BA00A6E0D1 /* ComparatorTests.swift */; };
 		8BF64FB71C5E8AAE00A6E0D1 /* AEAppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersion.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,13 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B62B4091DAC158E006FAB83 /* Comparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparator.swift; sourceTree = "<group>"; };
+		8B62B40B1DAC1593006FAB83 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		8BB80C951CD8CB2700CFB4B9 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		8BB80C961CD8CBB500CFB4B9 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8BF64F9C1C5E89BA00A6E0D1 /* AEAppVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEAppVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF64F9F1C5E89BA00A6E0D1 /* AEAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAppVersion.h; sourceTree = "<group>"; };
 		8BF64FA11C5E89BA00A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF64FA61C5E89BA00A6E0D1 /* AEAppVersionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AEAppVersionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BF64FAB1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEVersionComparatorTests.swift; sourceTree = "<group>"; };
+		8BF64FAB1C5E89BA00A6E0D1 /* ComparatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparatorTests.swift; sourceTree = "<group>"; };
 		8BF64FAD1C5E89BA00A6E0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAppVersion.swift; sourceTree = "<group>"; };
 		8BF650101C5E9AD300A6E0D1 /* AEAppVersion.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AEAppVersion.podspec; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				8BF64FB61C5E8AAE00A6E0D1 /* AEAppVersion.swift */,
+				8B62B4091DAC158E006FAB83 /* Comparator.swift */,
+				8B62B40B1DAC1593006FAB83 /* State.swift */,
 				8BF64FB81C5E8B0D00A6E0D1 /* Supporting Files */,
 			);
 			path = Sources;
@@ -88,7 +94,7 @@
 		8BF64FAA1C5E89BA00A6E0D1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8BF64FAB1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift */,
+				8BF64FAB1C5E89BA00A6E0D1 /* ComparatorTests.swift */,
 				8BF64FAD1C5E89BA00A6E0D1 /* Info.plist */,
 			);
 			path = Tests;
@@ -172,14 +178,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = AE;
 				TargetAttributes = {
 					8BF64F9B1C5E89BA00A6E0D1 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					8BF64FA51C5E89BA00A6E0D1 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -224,6 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BF64FB71C5E8AAE00A6E0D1 /* AEAppVersion.swift in Sources */,
+				8B62B40A1DAC158E006FAB83 /* Comparator.swift in Sources */,
+				8B62B40C1DAC1593006FAB83 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF64FAC1C5E89BA00A6E0D1 /* AEVersionComparatorTests.swift in Sources */,
+				8BF64FAC1C5E89BA00A6E0D1 /* ComparatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +269,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -307,8 +319,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -328,6 +342,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -340,6 +355,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -351,6 +367,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -359,6 +376,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -369,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -379,6 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -389,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.tadija.AEAppVersionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

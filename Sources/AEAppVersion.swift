@@ -25,162 +25,66 @@
 import Foundation
 
 /**
-    Subclass of `AEVersionComparator` with static properties for `version` and `build` from main bundle info dictionary.
-    When initialized it checks if previous version exists in user defaults and set version state accordingly, 
-    after which it saves current version to user defaults dictionary.
+    Subclass of `Comparator` with properties for `version` and `build` from main bundle info dictionary.
+    Call `launch` in AppDelegate's `didFinishLaunchingWithOptions:` then check its `state` property when needed.
 */
-public class AEAppVersion: AEVersionComparator {
-
-    // MARK: Singleton
+open class AEAppVersion: Comparator {
+    
+    // MARK: Properties
     
     /// Shared instance
-    public static let sharedInstance = AEAppVersion()
-    
-    /**
-        Helper method for initializing `sharedInstance` singleton object.
-     
-        This should be called in AppDelegate's `didFinishLaunchingWithOptions:`.
-    */
-    public class func launch() { AEAppVersion.sharedInstance }
-    
-    // MARK: - Static Properties
+    open static let shared = AEAppVersion()
     
     /// Version from Main Bundle Info dictionary
-    public static let version = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+    open static let version = Bundle.main.version ?? "0.0.0"
     
     /// Build from Main Bundle Info dictionary
-    public static let build = bundle.objectForInfoDictionaryKey(kCFBundleVersionKey as String) as! String
-    
-    /// Main bundle helper
-    private static let bundle = NSBundle.mainBundle()
+    open static let build = Bundle.main.build ?? "0"
     
     /// `version` and `build` concatenated like this: "1.0.0 (1)"
-    public static let versionAndBuild = "\(version) (\(build))"
+    open static let versionAndBuild = "\(version) (\(build))"
     
     /// Key for saving information about previous version to user defaults
-    public static let savedVersionKey = "AEAppVersion.PreviousVersionAndBuild"
+    open static let savedVersionKey = "AEAppVersion.PreviousVersionAndBuild"
+    
+    // MARK: API
+    
+    /**
+        Helper method for initializing `shared` singleton object.
+     
+        This should be called in AppDelegate's `didFinishLaunchingWithOptions:`.
+     
+        It will check if saved version already exists in user defaults and set its `state` property accordingly.
+        After that it will save current version as saved version under `savedVersionKey` in user defaults.
+    */
+    open class func launch() { let _ = AEAppVersion.shared }
     
     // MARK: Init
     
-    /**
-        Convenience initializer.
-
-        Checks if saved version already exists in user defaults and set state accordingly,
-        after which it saves current version as saved version under `savedVersionKey` in user defaults.
-
-        - returns: An initialized version comparator object.
-    */
-    public convenience init() {
-        let defaults = NSUserDefaults.standardUserDefaults()
+    private convenience init() {
+        let defaults = UserDefaults.standard
         
-        let old = defaults.stringForKey(AEAppVersion.savedVersionKey)
+        let old = defaults.string(forKey: AEAppVersion.savedVersionKey)
         let current = AEAppVersion.versionAndBuild
         
         self.init(old: old, new: current)
         
-        defaults.setObject(current, forKey: AEAppVersion.savedVersionKey)
+        defaults.set(current, forKey: AEAppVersion.savedVersionKey)
         defaults.synchronize()
     }
     
 }
 
-// MARK: - AEVersionComparator
+// MARK: - Bundle helper extension
 
-/**
-    Base class for comparing given version strings via built in compare with `NSStringCompareOptions.NumericSearch`.
-    It holds `AEVersionState` inside `state` property.
-*/
-public class AEVersionComparator {
+extension Bundle {
     
-    // MARK: Properties
-    
-    /// Version comparation state
-    public let state: AEVersionState
-    
-    // MARK: Init
-    
-    /**
-        Designated initializer.
-    
-        Initializes and returns a newly allocated version comparator object with `state` property configured
-        by calling helper method `stateForComparingVersions` with given version strings.
-        
-        - parameter old: Old (previous) version string for comparation
-        - parameter new: New (current) version string for comparation
-    
-        - returns: An initialized version comparator object.
-    */
-    public init(old: String?, new: String) {
-        if let oldVersion = old {
-            state = AEVersionComparator.stateForComparingVersions(old: oldVersion, new: new)
-        } else {
-            state = .New
-        }
+    var version: String? {
+        return infoDictionary?["CFBundleShortVersionString"] as? String
     }
     
-    // MARK: Helpers
-    
-    /**
-        Compares given version strings with `NSStringCompareOptions.NumericSearch`.
-    
-        - parameter old: Old (previous) version string for comparation
-        - parameter new: New (current) version string for comparation
-    
-        - returns: Proper `State` after comparing given versions.
-    */
-    public class func stateForComparingVersions(old old: String, new: String) -> AEVersionState {
-        let comparison = old.compare(new, options: .NumericSearch)
-        switch comparison {
-        case .OrderedSame:
-            return .Equal
-        case .OrderedAscending:
-            return .Update(previousVersion: old)
-        case .OrderedDescending:
-            return .Rollback(previousVersion: old)
-        }
+    var build: String? {
+        return infoDictionary?["CFBundleVersion"] as? String
     }
     
-}
-
-// MARK: - AEVersionState
-
-/**
-    App version state
-
-    - New: Clean install
-    - Equal: Version not changed
-    - Update: Update from given version
-    - Rollback: Rollback from given version
-*/
-public enum AEVersionState {
-    /// Clean install
-    case New
-    /// Version not changed
-    case Equal
-    /// Update from given version
-    case Update(previousVersion: String)
-    /// Rollback from given version
-    case Rollback(previousVersion: String)
-}
-
-/// Conformance to `Equatable` protocol
-extension AEVersionState: Equatable {}
-
-/**
-    Implementation of the `Equatable` protocol so that `AEVersionState` 
-    can be compared for value equality using operators == and !=.
-*/
-public func == (lhs: AEVersionState, rhs: AEVersionState) -> Bool {
-    switch (lhs, rhs) {
-    case (.New, .New):
-        return true
-    case (.Equal, .Equal):
-        return true
-    case (let .Update(previous1), let .Update(previous2)):
-        return previous1 == previous2
-    case (let .Rollback(previous1), let .Rollback(previous2)):
-        return previous1 == previous2
-    default:
-        return false
-    }
 }

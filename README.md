@@ -1,7 +1,7 @@
 # AEAppVersion
-**Simple and Lightweight App Version Tracking**
+**Simple and lightweight iOS App Version Tracking written in Swift**
 
-[![Language Swift 2.2](https://img.shields.io/badge/Language-Swift%202.2-orange.svg?style=flat)](https://swift.org)
+[![Language Swift 3.0](https://img.shields.io/badge/Language-Swift%203.0-orange.svg?style=flat)](https://swift.org)
 [![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](http://www.apple.com)
 [![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/tadija/AEAppVersion/blob/master/LICENSE)
 
@@ -9,17 +9,16 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
-> Dead simple app version tracking. Add one line to your code and you're all set. 
+> Dead simple app version tracking. Add one line to your code and you're all set.  
+> I recommend adding this to the project before you really need it (e.g. initial version),  
+> so when you do have a need to change something on particular version update, it's already there.
 
-**AEAppVersion** is a [minion](http://tadija.net/public/minion.png) which consists of two classes:  
-
-- **AEVersionComparator**  
-Base class for comparing given version strings via built in `compare` with `NSStringCompareOptions.NumericSearch`.  
-It holds version state **(clean install, not changed, update, rollback)** inside `state` enum property.  
-
-- **AEAppVersion**  
-Subclass of `AEVersionComparator` with static properties for `version` and `build` strings from main bundle info dictionary.  
-When initialized it checks if previous version exists in user defaults and set version `state` accordingly, after which it saves current version to user defaults dictionary.
+## Index
+- [Features](#features)
+- [Usage](#usage)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [License](#license)
 
 ## Features
 - Check **app version state** via enum property
@@ -28,42 +27,46 @@ When initialized it checks if previous version exists in user defaults and set v
 - Covered with [docs](http://cocoadocs.org/docsets/AEAppVersion)
 
 ## Usage
-You should just initialize it from your AppDelegate's `didFinishLaunchingWithOptions` and that's it.
+You should just initialize `AEAppVersion` from your AppDelegate's `didFinishLaunchingWithOptions:` like this:
 
 ```swift
-func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-   AEAppVersion.launch()
-   return true
-}
+AEAppVersion.launch()
 ```
 
 Anytime later you can check version state like this:
 
 ```swift
-switch AEAppVersion.sharedInstance.state {
-case .New:
+switch AEAppVersion.shared.state {
+case .new:
   return "Clean Install"
-case .Equal:
+case .equal:
   return "Not Changed"
-case .Update(let previousVersion):
+case .update(let previousVersion):
   return "Update from: \(previousVersion)"
-case .Rollback(let previousVersion):
+case .rollback(let previousVersion):
   return "Rollback from: \(previousVersion)"
 }
+```
+
+**Hint:** You may use helpers for app version and build number like this:
+
+```swift
+let version = AEAppVersion.version
+let build = AEAppVersion.build
 ```
 
 You can also check out the example project and unit tests for more information.
 
 ## Requirements
-- Xcode 7.0+
+- Xcode 8.0+
 - iOS 8.0+
 
 ## Installation
 
-- [CocoaPods](http://cocoapods.org/):
+- [Swift Package Manager](https://swift.org/package-manager/):
 
-    ```ruby
-    pod 'AEAppVersion'
+    ```
+    .Package(url: "https://github.com/tadija/AEAppVersion.git", majorVersion: 0)
     ```
 
 - [Carthage](https://github.com/Carthage/Carthage):
@@ -72,9 +75,11 @@ You can also check out the example project and unit tests for more information.
     github "tadija/AEAppVersion"
     ```
 
-- Manually:
+- [CocoaPods](http://cocoapods.org/):
 
-  Just drag *AEAppVersion.swift* into your project and that's it.
+    ```ruby
+    pod 'AEAppVersion'
+    ```
 
 ## License
 AEAppVersion is released under the MIT license. See [LICENSE](LICENSE) for details.
