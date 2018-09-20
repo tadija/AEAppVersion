@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 0.4.2
+
+- Bumped Swift version to 4.2
+
+## Version 0.4.1
+
+- Bumped Swift version to 3.2
+
 ## Version 0.4.0
 
 - Code updated for Swift 3.0 - Xcode 8.0 (8A218a)

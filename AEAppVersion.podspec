@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name = 'AEAppVersion'
-s.version = '0.4.0'
+s.version = '0.4.2'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.summary = 'Simple and lightweight iOS App Version Tracking written in Swift'
 
