@@ -1,13 +1,12 @@
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://swift.org)
+[![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](http://www.apple.com)
+[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/AEAppVersion.svg?style=flat)](https://cocoapods.org/pods/AEAppVersion)
+[![Carthage](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+
 # AEAppVersion
 **Simple and lightweight iOS App Version Tracking written in Swift**
-
-[![Language Swift 3.0](https://img.shields.io/badge/Language-Swift%203.0-orange.svg?style=flat)](https://swift.org)
-[![Platforms iOS](https://img.shields.io/badge/Platforms-iOS-lightgray.svg?style=flat)](http://www.apple.com)
-[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/tadija/AEAppVersion/blob/master/LICENSE)
-
-[![CocoaPods Version](https://img.shields.io/cocoapods/v/AEAppVersion.svg?style=flat)](https://cocoapods.org/pods/AEAppVersion)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 > Dead simple app version tracking. Add one line to your code and you're all set.  
 > I recommend adding this to the project before you really need it (e.g. initial version),  
