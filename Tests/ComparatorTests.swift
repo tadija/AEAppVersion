@@ -63,6 +63,16 @@ class ComparatorTests: XCTestCase {
         new = "1.0.101"
         state = Comparator.stateForComparingVersions(old: old, new: new)
         XCTAssertEqual(state, State.update(previousVersion: old))
+
+        old = "1.0.1 (101.2)"
+        new = "1.1 (11.1)"
+        state = Comparator.stateForComparingVersions(old: old, new: new)
+        XCTAssertEqual(state, State.update(previousVersion: old))
+
+        old = "1.1 (11.1)"
+        new = "1.2.1 (121.1)"
+        state = Comparator.stateForComparingVersions(old: old, new: new)
+        XCTAssertEqual(state, State.update(previousVersion: old))
         
         old = "1.0.0.1A"
         new = "1.0.0.1B"

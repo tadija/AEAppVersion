@@ -33,7 +33,7 @@ open class Comparator {
     // MARK: Properties
     
     /// Version comparation state
-    open let state: State
+    public let state: State
     
     // MARK: Init
     

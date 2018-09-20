@@ -33,19 +33,19 @@ open class AEAppVersion: Comparator {
     // MARK: Properties
     
     /// Shared instance
-    open static let shared = AEAppVersion()
+    public static let shared = AEAppVersion()
     
     /// Version from Main Bundle Info dictionary
-    open static let version = Bundle.main.version ?? "0.0.0"
+    public static let version = Bundle.main.version ?? "0.0.0"
     
     /// Build from Main Bundle Info dictionary
-    open static let build = Bundle.main.build ?? "0"
+    public static let build = Bundle.main.build ?? "0"
     
     /// `version` and `build` concatenated like this: "1.0.0 (1)"
-    open static let versionAndBuild = "\(version) (\(build))"
+    public static let versionAndBuild = "\(version) (\(build))"
     
     /// Key for saving information about previous version to user defaults
-    open static let savedVersionKey = "AEAppVersion.PreviousVersionAndBuild"
+    public static let savedVersionKey = "AEAppVersion.PreviousVersionAndBuild"
     
     // MARK: API
     
